@@ -13,6 +13,8 @@ do
     zstd -19 < "$f" > compressed/"$BASE".zstd
     echo "  flac"
     flac -s -f --best -o compressed/"$BASE".flac "$f" 
+    echo "  flacq"
+    flacq -c >compressed/"$BASE".flacq <"$f"
     # echo "  brotli"
     # brotli -Z "$f" -o compressed/"$BASE".br
     echo "  mac"

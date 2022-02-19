@@ -6,6 +6,7 @@ exts = [
     ".xz",
     ".zstd",
     ".flac",
+    ".flacq",
     ".ape",
     ".m4a",
     ".als",
